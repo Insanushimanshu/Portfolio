@@ -1,0 +1,171 @@
+body {
+  background-color: #CDFADB;
+  margin: 0;
+}
+
+.container {
+  padding: 0 5rem;
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+.firstsection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 5rem;
+  align-items: baseline;
+}
+.firstsection .navigation {
+  background-color: #FFCF96;
+  border-radius: 8px;
+  box-shadow: 1px 5px 8px black;
+}
+.firstsection .navigation .nav {
+  margin: 0;
+  padding: 1rem;
+}
+.firstsection .navigation ul {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.firstsection .navigation li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+.firstsection .navigation .aboutMe {
+  font-weight: bold;
+}
+.firstsection a {
+  color: black;
+  text-decoration: none;
+}
+.firstsection a:hover {
+  text-decoration: underline;
+}
+
+.secondsection {
+  display: flex;
+  justify-content: center;
+}
+.secondsection .aboutMe-div {
+  background-color: #FFCF96;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 4px 8px black;
+  margin: 3rem 0 0 0;
+  padding: 1rem 0 0 0;
+  width: 70rem;
+  gap: 2.5rem;
+}
+.secondsection .aboutMe-div .myimg-div {
+  margin: 0;
+  padding: 0;
+}
+.secondsection .aboutMe-div .myimg-div .myimg {
+  width: 25rem;
+  margin-bottom: 0;
+  padding: 2rem 2rem 0 0;
+}
+.secondsection .aboutMe-div .aboutMe-description .description {
+  padding: 0 3rem 0 0;
+  font-size: 1.5rem;
+}
+.secondsection .aboutMe-div .aboutMe-description .description .name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.parentofthridsection {
+  display: flex;
+  justify-content: center;
+}
+.parentofthridsection .thirdsection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 70rem;
+  align-items: flex-start;
+  padding: 2rem 0;
+}
+.parentofthridsection .thirdsection .head1 {
+  border-radius: 1rem 0 0 0;
+}
+.parentofthridsection .thirdsection .head3 {
+  border-radius: 0 1rem 0 0;
+}
+.parentofthridsection .thirdsection .card-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 23rem;
+  background-color: #FF8080;
+  border-radius: 1rem;
+  padding: 1rem 0 0 0;
+}
+.parentofthridsection .thirdsection .card-head .card {
+  width: 23rem;
+  background-color: #F6FDC3;
+  text-align: center;
+  padding: 0;
+}
+.parentofthridsection .thirdsection .card-head .card .card-heading {
+  margin: 0;
+}
+.parentofthridsection .thirdsection .card-head .li-head {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.parentofthridsection .thirdsection .card-head ul {
+  width: 20rem;
+}
+.parentofthridsection .thirdsection .card-head li {
+  color: white;
+  list-style: none;
+  padding: 0.5rem 0;
+  font-weight: bold;
+  border: 2px solid #FFCF96;
+  padding: 0.5rem;
+}
+.parentofthridsection .thirdsection .card-head li .socials-link {
+  text-decoration: none;
+  color: white;
+}
+.parentofthridsection .thirdsection .card-head .skills:hover {
+  background-color: #4CAF50;
+  padding-right: 9rem;
+  transition: 1s;
+}
+.parentofthridsection .thirdsection .card-head .hobbies:hover {
+  background-color: #4CAF50;
+  padding-right: 9rem;
+  transition: 1s;
+}
+.parentofthridsection .thirdsection .card-head .socials-list {
+  padding: 8px;
+}
+.parentofthridsection .thirdsection .card-head .socials-list:hover {
+  background-color: #4CAF50;
+  border-radius: 1rem;
+  transition: 1s;
+  padding: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 2rem; /* Adjust padding for smaller screens */
+  }
+}
+/* Styles for screens larger than 768px (tablets and desktops) */
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 5rem; /* Adjust padding for larger screens */
+  }
+}/*# sourceMappingURL=aboutMe.css.map */

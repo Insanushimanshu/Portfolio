@@ -1,0 +1,153 @@
+body {
+  background-color: #CDFADB;
+  margin: 0;
+}
+
+.container {
+  padding: 0 5rem;
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+.firstsection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 5rem;
+  align-items: baseline;
+}
+.firstsection .navigation {
+  background-color: #FFCF96;
+  border-radius: 8px;
+  box-shadow: 1px 5px 8px black;
+}
+.firstsection .navigation .nav {
+  margin: 0;
+  padding: 1rem;
+}
+.firstsection .navigation ul {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.firstsection .navigation li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+.firstsection .navigation .homepage {
+  font-weight: bold;
+}
+.firstsection a {
+  color: black;
+  text-decoration: none;
+}
+.firstsection a:hover {
+  text-decoration: underline;
+}
+
+.secondsection {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0 1rem 0;
+}
+.secondsection .textsection {
+  width: 50%;
+}
+.secondsection .textsection .texthead {
+  font-size: 3.5rem;
+}
+.secondsection .textsection .name {
+  color: #FF8080;
+}
+.secondsection .textsection .webdeveloper {
+  font-weight: 12000;
+}
+.secondsection .textsection button {
+  background-color: #4CAF50;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #FFCF96;
+  border-radius: 2rem;
+  box-shadow: 0 2px 4px black;
+}
+.secondsection .textsection button a {
+  text-decoration: none;
+  color: #211C6A;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.secondsection .textsection button:hover {
+  background-color: #45a049;
+}
+.secondsection .textsection button:hover a:hover {
+  color: #FF8080;
+}
+.secondsection .imagesection {
+  width: 50%;
+  overflow: hidden;
+}
+.secondsection .imagesection .myimg {
+  width: 80%;
+  transition: transform 5s ease-in-out;
+}
+.secondsection .imagesection .myimg:hover {
+  scale: 1.05;
+}
+
+.thirdsection {
+  display: flex;
+  gap: 1rem;
+}
+.thirdsection img {
+  width: 2.5rem;
+  padding-top: 20px;
+}
+.thirdsection img:hover {
+  padding-top: 5px;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 2rem; /* Reduce padding for smaller screens */
+  }
+  .firstsection {
+    height: auto; /* Allow navigation to wrap on smaller screens */
+    flex-direction: column; /* Stack navigation items vertically */
+    align-items: center; /* Center align navigation items */
+  }
+  .navigation {
+    margin-bottom: 2rem; /* Add space between navigation and other sections */
+  }
+  .secondsection {
+    flex-direction: column; /* Stack textsection and imagesection vertically */
+    text-align: center; /* Center align textsection */
+  }
+  .secondsection .textsection,
+  .secondsection .imagesection {
+    width: 100%; /* Full width for both sections */
+  }
+  .secondsection .imagesection {
+    margin-top: 2rem; /* Add space between textsection and imagesection */
+  }
+  .thirdsection {
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* Further adjustments for even smaller screens */
+  .container {
+    padding: 0 1rem; /* Reduce padding even more */
+  }
+  .firstsection .navigation ul {
+    flex-direction: column; /* Stack navigation items vertically */
+    gap: 1rem; /* Add spacing between navigation items */
+  }
+}/*# sourceMappingURL=index.css.map */
